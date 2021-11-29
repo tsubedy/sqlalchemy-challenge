@@ -1,6 +1,6 @@
 # sqlalchemy-challenge
 
-Step 1 - Climate Analysis and Exploration
+## Step 1 - Climate Analysis and Exploration
 
 Python and SQLAlchemy are used to do basic climate analysis and data exploration for the given Hawaii climate database. The following analysis were completed using SQLAlchemy ORM queries, Pandas, and Matplotlib.
 
@@ -28,7 +28,7 @@ Station Analysis is done by:
 - Querying the last 12 months of temperature observation data for this station and Ploting the results as a histogram with bins=12. (fig: histogram of temperature.png)
 
 
-Step 2 - Climate App
+## Step 2 - Climate App
 
 After completion of initial analysis, a Flask API based on the queries developed above is designed using Flask to create routes. All available routes are listed in the home page. The query results are converted into a dictionary using date as key and precipation as value for the precipation data and returned the JSON represenation of the dictionary. Similarly, JSON list are returned for stations, temperature observations (tobs) for previous year.   
 
@@ -38,9 +38,9 @@ For given the start date only as well as both the start and end dates, TMIN, TAV
 
 
 
-BONUS PART OF THE ANALYSIS:
+## BONUS PART OF THE ANALYSIS:
 
-Temperature Analysis I:
+## Temperature Analysis I:
 
 Hawaii is reputed to enjoy mild weather all year. Is there a meaningful difference between the temperature in June and December?
 
@@ -50,7 +50,7 @@ Using pandas the following analysis is performed by:
 - Identifying the average temperatures in June and December at all stations across all available years in the dataset. 
 - using paired t-test to determine if there a significant difference in the average temperature for both the months. Found there is no significant difference as the p-value smaller than 0.05 level of significance. 
 
-Temperature Analysis II:
+## Temperature Analysis II:
 
 While looking to make a trip from August first to August seventh of this year, but worried that the weather will be less than ideal. Using historical data to find out what the temperature has previously looked like.
 
@@ -58,7 +58,7 @@ A function called calc_temps that accepts a start date and end date in the forma
 A plot is obtained for the min, avg, and max temperature from the previous query as a bar chart that shows  
 “Trip Avg Temp” as the title, the average temperature as the bar height (y value) and the peak-to-peak (TMAX-TMIN) value as the y error bar (YERR). (fig: Average_temperature.png)
 
-Daily Rainfall Average:
+#### Daily Rainfall Average:
 
 After gettign the idea of the temperature it comes to check what the rainfall has been!
 
